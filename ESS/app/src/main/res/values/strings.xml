@@ -1,0 +1,94 @@
+<resources>
+    <string name="ess_app_name">ESS</string>
+    <string name="ess_base_language">en</string>
+
+    <string name="ess_more">更多</string>
+    <string name="ess_no_data">暂无数据</string>
+
+    <string name="base_info">基础信息</string>
+    <string name="ess_geographical_position">地理位置：</string>
+    <string name="ess_object_name">对象名：</string>
+    <string name="ess_object_num">对象编号：</string>
+    <string name="ess_component_name">部件名：</string>
+    <string name="ess_component1_num">部件1编号：</string>
+    <string name="ess_component2_num">部件2编号：</string>
+
+    <string name="please_input_geographical_position">请填写地理位置</string>
+    <string name="please_input_object_name">请填写对象名</string>
+    <string name="please_object_num">请填写对象编号</string>
+    <string name="please_component_name">请填写部件名</string>
+    <string name="please_component1_num">请填写部件1编号</string>
+    <string name="please_component2_num">请填写部件2编号</string>
+
+    <string name="es">服务</string>
+    <string name="tr">排故</string>
+    <string name="ed">诊断</string>
+    <string name="ec">状态</string>
+
+    <string name="ess_user">对象</string>
+    <string name="ess_logout">注册/注销</string>
+    <string name="ess_language">语言</string>
+    <string name="ess_btn">按钮</string>
+    <string name="ess_setting">设置</string>
+
+    <string name="ess_letter">字母</string>
+    <string name="ess_icon">图标</string>
+
+    <string name="ess_chinese">简体中文</string>
+    <string name="ess_english">English</string>
+
+    <string name="loading">正在加载</string>
+    <string name="load_more">加载更多</string>
+    <string name="load_more_fail">加载失败，点击重试</string>
+    <string name="load_more_nomore">已经到底啦</string>
+    <string name="loading_x5_core">正在为您加载内核，请稍等...</string>
+
+    <string name="ess_begin">开始</string>
+    <string name="ess_edit">修改</string>
+    <string name="ess_cancel">取消</string>
+    <string name="ess_send">发送</string>
+    <string name="ess_finish">完成</string>
+    <string name="ess_result">结果</string>
+    <string name="ess_delete">删除</string>
+
+    <string name="may_reason">可能的原因</string>
+    <string name="real_reason">真实原因</string>
+
+    <string name="ess_text">文本</string>
+    <string name="ess_remark">备注</string>
+    <string name="ess_audio">音频</string>
+    <string name="ess_video">视频</string>
+    <string name="ess_image">图片</string>
+    <string name="ess_history">历史</string>
+
+    <string name="scanning_file">正在扫描文件</string>
+
+    <string name="ess_ip_address">IP地址：</string>
+    <string name="ess_port">端口号：</string>
+    <string name="ess_btn_sure">确定</string>
+    <string name="ess_btn_cancel">取消</string>
+
+    <string name="please_input_ip">请输入IP地址</string>
+    <string name="please_input_port">请输入端口号</string>
+
+    <string name="ess_connect_success">连接成功</string>
+    <string name="ess_send_finish">发送完毕</string>
+    <string name="ess_unzip_file">正在解压文件...</string>
+    <string name="ess_unzip_success">解压成功</string>
+
+    <string name="not_found">未找到对应信息</string>
+    <string name="add_custom_fun">添加自定义排故方法</string>
+
+    <string name="input_password">请输入密码</string>
+    <string name="password_fail">密码错误，请重新输入！</string>
+
+    <string name="ess_tip">提示</string>
+    <string name="ess_please_sure">请确认</string>
+
+    <string name="change_file">存在同名文件，是否替换？</string>
+    <string name="receive_file_ing">正在接收文件...</string>
+    <string name="send_file_ing">正在发送文件...</string>
+
+    <string name="sen_file_zip">正在压缩文件...</string>
+
+</resources>

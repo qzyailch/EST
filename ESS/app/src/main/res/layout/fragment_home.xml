@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <com.qian.ess.widget.CustomEmptyView
+        android:id="@+id/icon_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/list_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/border_line"
+        android:dividerHeight="0.5dp" />
+
+</FrameLayout>

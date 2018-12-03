@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    /***********************************app主题颜色*******************************************/
+    <!--app主色-->
+    <color name="app_theme_color">#303030</color>
+    <color name="app_theme_color_green">#48C11E</color>
+    <!--点击色-->
+    <color name="app_btn_click_color">#2B2B2B</color>
+
+    /***********************************背景色*******************************************/
+    <!--界面背景色：淡灰-->
+    <color name="bg_gray">#f4f4f4</color>
+    <!--界面背景色：黑色-->
+    <color name="bg_black">#000000</color>
+    <!--界面背景色：白色-->
+    <color name="bg_white">#FFFFFF</color>
+    <!--dialog透明背景色-->
+    <color name="dialog_bg">#86222222</color>
+    <!--View浅蓝色背景色-->
+    <color name="bg_view">#F6FCFF</color>
+    <!--状态栏颜色-->
+    <color name="text_white_gray">#B2B2B2</color>
+
+    /***********************************通用文字颜色*******************************************/
+    <!--白色文字-->
+    <color name="text_white">#FFFFFF</color>
+    <!--主标题文字颜色-->
+    <color name="text_title_color">#333</color>
+    <!--副标题文字颜色-->
+    <color name="text_subtitle_color">#666</color>
+    <!--不能点击或失效的文字，或一些列表上显示的时间，内容等等颜色-->
+    <color name="text_content_color">#999</color>
+
+    <!--焦点提示文字颜色-->
+    <color name="hint_input_color">#b8b8b8</color>
+    <!--点缀或提示文字颜色-->
+    <color name="text_tip_color">#F64355</color>
+
+    /***********************************app辅助色*******************************************/
+    <!--app辅助色：蓝色-->
+    <color name="blue_assist_color">#29a8ec</color>
+    <!--app辅助色：淡蓝色-->
+    <color name="blue_light_assist_color">#68BEEC</color>
+    <!--app辅助色：黄色-->
+    <color name="yellow_assist_color">#FFC000</color>
+    <color name="red_assist_color">#F64355</color>
+    <color name="about_us_us_tel">#f5a623</color>
+    <color name="integral_assist_color">#ED6F00</color>
+
+    /***********************************通用按钮背景+文字颜色*********************************/
+    <!--按钮可点击状态背景颜色：红色-->
+    <color name="btn_bg_red">#F64355</color>
+    <!--按钮不能点击状态的文字颜色-->
+    <color name="btn_text_non_click">#E9818B</color>
+
+    <!--按钮按下的颜色-->
+    <color name="btn_clicked">#EB7F97</color>
+
+    <!--按钮禁用状态背景颜色：淡灰-->
+    <color name="btn_bg_disable">#DDDDDD</color>
+    <color name="btn_bg_disable_bbb">#BBBBBB</color>
+    <!--按钮禁用状态文字颜色-->
+    <color name="btn_text_disable">#bbb</color>
+
+    /***********************************通用次按钮背景+文字颜色*********************************/
+    <!--次按钮文字颜色-->
+    <color name="sub_btn_text_color">#666</color>
+    <!--1px的描边颜色-->
+    <color name="sub_btn_stroke_color">#ccc</color>
+
+    <!--次按钮按下背景颜色-->
+    <color name="sub_btn_click_state_bg_color">#F64355</color>
+    <!--次按钮按下文字颜色-->
+    <color name="sub_btn_click_state_text_color">#FFFFFF</color>
+
+    /**************************固定按钮（固定在屏幕下方的按钮）背景+文字颜色************************/
+    <!--固定按钮背景颜色-->
+    <color name="fixed_btn_bg">#F64355</color>
+    <!--固定按钮文字颜色-->
+    <color name="fixed_btn_text">#FFFFFF</color>
+
+    /*********************************退出按钮背景+文字颜色**************************************/
+    <!--退出按钮文字颜色-->
+    <color name="btn_log_out_text_color">#F64355</color>
+    <!--退出按钮背景颜色-->
+    <color name="btn_log_out_bg_color">#e8e8e8</color>
+
+    /*********************************搜索框背景+文字颜色**************************************/
+    <!--搜索框背景-->
+    <color name="search_bg">#f4f4f4</color>
+    <!--搜索框内提示文字颜色-->
+    <color name="search_hint_text_color">#bbb</color>
+    <!--搜索框输入内容文字颜色-->
+    <color name="search_input_text_color">#333</color>
+    <!--搜索框旁边的“取消”按钮颜色-->
+    <color name="search_cancel_color">#29a8ec</color>
+
+    /***********************************分割线*******************************************/
+    <!--列表分割线-->
+    <color name="border_line">#f4f4f4</color>
+
+    <color name="hint_text_color">#151515</color>
+
+    <color name="appoint_use_condition">#3F3F3F</color>
+
+    <!--个人中心到底了的分割线-->
+    <color name="line_personal_bottom">#DDDDDD</color>
+    <color name="update_tel_sms">#CCCCCC</color>
+
+    <color name="mot_fail_hint">#2A2A2A</color>
+
+    <!--底部操作栏背景-->
+    <color name="bottom_handle_bg">#1B1B1B</color>
+    <!--切换未选中的颜色-->
+    <color name="tab_unselect_text_color">#3C3C3C</color>
+
+</resources>

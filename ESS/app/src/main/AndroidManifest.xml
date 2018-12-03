@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qian.ess">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用程序写数据到外部存储设备（主要是SD卡） -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".application.ESSApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/ess_app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+        <service
+            android:name=".service.SocketService"
+            android:exported="false" />
+
+        <service
+            android:name=".service.InitService"
+            android:exported="false" />
+
+        <service
+            android:name=".service.RecordingService"
+            android:exported="false" />
+
+        <activity
+            android:name=".mvp.ui.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.SplashTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".mvp.ui.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale|layoutDirection|keyboard" />
+
+        <activity
+            android:name=".mvp.ui.activity.camera.CameraActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mvp.ui.activity.task.TaskDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.task.BeginTaskActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.ProblemDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.BeginProblemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.pdf.ShowPDFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.ScanIpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.status.StatusActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.SocketClientActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".mvp.ui.activity.pdf.ShowPDFActivity3"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.task.TaskTextActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".mvp.ui.activity.task.TaskHistoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.camera.EditImageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.ProblemPositionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.ProblemReasonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.ProblemDescActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.ProblemSolutionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.ProblemResultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.ImageBrowseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.dialog.SettingDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/transCuteStyle" />
+
+        <activity
+            android:name=".mvp.ui.activity.dialog.LoadingDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/transCuteStyle" />
+
+        <activity
+            android:name=".mvp.ui.activity.FirstInputActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.ProblemRemarkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".mvp.ui.activity.PlayMediaActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".mvp.ui.activity.problem.AddCustomFunActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="工作1完成情况"
+            android:textColor="@color/text_title_color"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon__details_close" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="呵呵呵呵"
+        android:textColor="@color/text_subtitle_color"
+        android:textSize="13sp" />
+
+</LinearLayout>

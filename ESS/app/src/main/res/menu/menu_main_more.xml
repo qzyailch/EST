@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@mipmap/icon_search"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/ess_more"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@mipmap/icon_mc_add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="更多"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource">
+        <menu>
+            <item
+                android:id="@+id/action_user"
+                android:icon="@mipmap/head"
+                android:showAsAction="never"
+                android:title="@string/ess_user"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_logout"
+                android:icon="@mipmap/power"
+                android:showAsAction="never"
+                android:title="@string/ess_logout"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_language"
+                android:icon="@mipmap/icon_mc_add"
+                android:showAsAction="never"
+                android:title="@string/ess_language"
+                app:showAsAction="never">
+
+                <menu>
+                    <item
+                        android:id="@+id/action_language_chinese"
+                        android:icon="@mipmap/icon_mc_add"
+                        android:showAsAction="never"
+                        android:title="@string/ess_chinese"
+                        app:showAsAction="never" />
+
+                    <item
+                        android:id="@+id/action_language_english"
+                        android:icon="@mipmap/icon_mc_add"
+                        android:showAsAction="never"
+                        android:title="@string/ess_english"
+                        app:showAsAction="never" />
+
+                </menu>
+
+            </item>
+
+            <item
+                android:id="@+id/action_btn"
+                android:icon="@mipmap/icon_mc_add"
+                android:showAsAction="never"
+                android:title="@string/ess_btn"
+                app:showAsAction="never">
+
+                <menu>
+                    <item
+                        android:id="@+id/action_letter"
+                        android:icon="@mipmap/icon_mc_add"
+                        android:showAsAction="never"
+                        android:title="@string/ess_letter"
+                        app:showAsAction="never" />
+
+                    <item
+                        android:id="@+id/action_icon"
+                        android:icon="@mipmap/icon_mc_add"
+                        android:showAsAction="never"
+                        android:title="@string/ess_icon"
+                        app:showAsAction="never" />
+
+                </menu>
+
+            </item>
+
+            <item
+                android:id="@+id/action_setting"
+                android:icon="@mipmap/setting"
+                android:showAsAction="never"
+                android:title="@string/ess_setting"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

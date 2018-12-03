@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/txt_solution_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排故方法"
+            android:textColor="@color/text_title_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_solution_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="填写排故方法"
+            android:padding="12dp"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/update_tel_sms"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/txt_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="故障位置"
+            android:textColor="@color/text_title_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="填写故障位置"
+            android:padding="12dp"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/update_tel_sms"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/txt_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原因"
+            android:textColor="@color/text_title_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:background="@null"
+            android:hint="填写原因"
+            android:padding="12dp"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/update_tel_sms"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="故障描述"
+            android:textColor="@color/text_title_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="填写故障描述"
+            android:padding="12dp"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/update_tel_sms"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/txt_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解决方法"
+            android:textColor="@color/text_title_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="填写解决方法"
+            android:padding="12dp"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/update_tel_sms"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_btn_sure"
+        style="@style/base_footer_txt_btn"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="@string/ess_btn_sure" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/border_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <include layout="@layout/bottom_handle_dialog" />
+
+    </LinearLayout>
+
+</LinearLayout>

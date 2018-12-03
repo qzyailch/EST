@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <TextView
+        android:id="@+id/txt_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner_task_step"
+        android:drawableRight="@mipmap/common_btn_details_s"
+        android:padding="15dp"
+        android:text="故障位置"
+        android:textColor="@color/text_title_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/bg_corner_task_step"
+        android:drawableRight="@mipmap/common_btn_details_s"
+        android:padding="15dp"
+        android:text="Reason"
+        android:textColor="@color/text_title_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/bg_corner_task_step"
+        android:drawableRight="@mipmap/common_btn_details_s"
+        android:padding="15dp"
+        android:text="故障描述"
+        android:textColor="@color/text_title_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/bg_corner_task_step"
+        android:drawableRight="@mipmap/common_btn_details_s"
+        android:padding="15dp"
+        android:text="解决办法"
+        android:textColor="@color/text_title_color"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_corner_task_step"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/txt_is_use_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="是否使用该方案"
+            android:textColor="@color/text_title_color"
+            android:textSize="15sp" />
+
+        <com.qian.ess.widget.ToggleButton
+            android:id="@+id/tb_is_use"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/bg_corner_task_step"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/txt_is_use_way_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="该方案是否可用"
+            android:textColor="@color/text_title_color"
+            android:textSize="15sp" />
+
+        <com.qian.ess.widget.ToggleButton
+            android:id="@+id/tb_is_work"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/border_line"
+        android:dividerHeight="0.5dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/border_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <include layout="@layout/bottom_handle_dialog" />
+
+    </LinearLayout>
+
+</LinearLayout>

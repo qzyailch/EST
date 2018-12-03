@@ -1,0 +1,93 @@
+<resources>
+    <string name="ess_app_name">EST</string>
+
+    <string name="ess_more">more</string>
+    <string name="ess_no_data">No Data</string>
+
+    <string name="base_info">Base Info</string>
+    <string name="ess_geographical_position">Geographical Position：</string>
+    <string name="ess_object_name">Object Name：</string>
+    <string name="ess_object_num">Object Number：</string>
+    <string name="ess_component_name">Component Name：</string>
+    <string name="ess_component1_num">Component1 Number：</string>
+    <string name="ess_component2_num">Component2 Number：</string>
+
+    <string name="please_input_geographical_position">Please Input Base Address</string>
+    <string name="please_input_object_name">Please Input Object Name</string>
+    <string name="please_object_num">Please Input Object Number</string>
+    <string name="please_component_name">Please Input Component Name</string>
+    <string name="please_component1_num">Please Input Component1 Number</string>
+    <string name="please_component2_num">Please Input Component2 Number</string>
+
+    <string name="es">ES</string>
+    <string name="tr">TR</string>
+    <string name="ed">ED</string>
+    <string name="ec">EC</string>
+
+    <string name="ess_user">Object</string>
+    <string name="ess_logout">Register/LogOut</string>
+    <string name="ess_language">Language</string>
+    <string name="ess_btn">Button</string>
+    <string name="ess_setting">Setting</string>
+
+    <string name="ess_letter">Letter</string>
+    <string name="ess_icon">Icon</string>
+
+    <string name="ess_chinese">Chinese</string>
+    <string name="ess_english">English</string>
+
+    <string name="loading">loading</string>
+    <string name="load_more">load more</string>
+    <string name="load_more_fail">load fail，click retry</string>
+    <string name="load_more_nomore">no more</string>
+    <string name="loading_x5_core">x5 core loading,please wait...</string>
+
+    <string name="ess_begin">Begin</string>
+    <string name="ess_edit">Edit</string>
+    <string name="ess_cancel">Cancel</string>
+    <string name="ess_send">Send</string>
+    <string name="ess_finish">Finish</string>
+    <string name="ess_result">Result</string>
+    <string name="ess_delete">Delete</string>
+
+    <string name="may_reason">Possible Reason</string>
+    <string name="real_reason">Real Reason</string>
+
+    <string name="ess_text">Text</string>
+    <string name="ess_remark">Remark</string>
+    <string name="ess_audio">Audio</string>
+    <string name="ess_video">Video</string>
+    <string name="ess_image">Image</string>
+    <string name="ess_history">History</string>
+
+    <string name="scanning_file">Scanning the file</string>
+
+    <string name="ess_ip_address">IP Address：</string>
+    <string name="ess_port">Port：</string>
+    <string name="ess_btn_sure">Sure</string>
+    <string name="ess_btn_cancel">Cancel</string>
+
+    <string name="please_input_ip">Please input IP address.</string>
+    <string name="please_input_port">Please input Port</string>
+
+    <string name="ess_connect_success">Connect Success</string>
+    <string name="ess_send_finish">Send Finish</string>
+    <string name="ess_unzip_file">Unzip File Loading...</string>
+    <string name="ess_unzip_success">Unzip Success</string>
+
+    <string name="not_found">not found this info.</string>
+    <string name="add_custom_fun">Add a custom solution</string>
+
+    <string name="input_password">Please Input Password</string>
+    <string name="password_fail">Password Is Wrong!</string>
+
+    <string name="ess_tip">Tip</string>
+    <string name="ess_please_sure">Please Sure</string>
+
+    <string name="change_file">There is a file with the same name, is or not replace？</string>
+    <string name="receive_file_ing">Receiving file...</string>
+    <string name="send_file_ing">Sending file...</string>
+
+    <string name="sen_file_zip">Compressing file...</string>
+
+</resources>

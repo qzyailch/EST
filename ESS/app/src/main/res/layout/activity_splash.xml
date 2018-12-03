@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="@string/ess_app_name"
+        android:textColor="@color/app_theme_color"
+        android:textSize="50dp" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/icon_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/txt_app_name"
+        android:layout_centerHorizontal="true"
+        app:matProg_barColor="#F64355"
+        app:matProg_barWidth="3dp"
+        app:matProg_progressIndeterminate="true" />
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_border_app_version"
+        android:paddingBottom="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp"
+        android:text="V1.0.0"
+        android:textColor="#BBBBBB"
+        android:textSize="14sp" />
+
+</RelativeLayout>

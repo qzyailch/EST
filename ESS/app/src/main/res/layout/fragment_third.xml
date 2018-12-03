@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <com.qian.ess.widget.CustomEmptyView
+        android:id="@+id/icon_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/border_line"
+        android:dividerHeight="0.5dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/icon_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:matProg_barColor="#F64355"
+            app:matProg_barWidth="3dp"
+            app:matProg_progressIndeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scanning_file"
+            android:textColor="@color/text_subtitle_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white">
+
+    <TextView
+        android:id="@+id/txt_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner_task_step"
+        android:padding="15dp"
+        android:text="故障位置"
+        android:textColor="@color/text_title_color"
+        android:textSize="15sp" />
+
+</LinearLayout>

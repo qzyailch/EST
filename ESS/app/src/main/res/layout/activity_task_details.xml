@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/label_location"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="单位："
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/txt_location"
+                        android:layout_width="659dp"
+                        android:layout_height="wrap_content"
+                        android:hint="省市区地址"
+                        android:padding="12dp"
+                        android:textColor="@color/text_title_color"
+                        android:textColorHint="@color/update_tel_sms"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_pc_number"
+                        android:layout_width="161dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="操作卡片编号："
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/txt_pc_number"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="操作卡片1"
+                        android:textColor="@color/text_tip_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_line" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/label_object_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="对象型号："
+                            android:textColor="@color/text_title_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/border_line" />
+
+                        <TextView
+                            android:id="@+id/label_object_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="对象编号："
+                            android:textColor="@color/text_title_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/border_line" />
+
+                        <TextView
+                            android:id="@+id/label_major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="专业："
+                            android:textColor="@color/text_title_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <LinearLayout
+                        android:layout_width="164dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_object_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="L-NN"
+                            android:textColor="@color/app_theme_color_green"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/border_line" />
+
+                        <TextView
+                            android:id="@+id/txt_object_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="NNNN"
+                            android:textColor="@color/text_tip_color"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/border_line" />
+
+                        <TextView
+                            android:id="@+id/txt_major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="Type of work"
+                            android:textColor="@color/text_tip_color"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/txt_pc_name"
+                        android:layout_width="494dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="Process Card Name"
+                        android:textColor="#806000"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/label_director_name"
+                                android:layout_width="161dp"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:text="主管："
+                                android:textColor="@color/text_title_color"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/border_line" />
+
+                            <TextView
+                                android:id="@+id/txt_director_name"
+                                android:layout_width="158dp"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:text="Qian"
+                                android:textColor="@color/text_title_color"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/border_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/label_send_date_time"
+                                android:layout_width="161dp"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:text="发送日期/时间："
+                                android:textColor="@color/text_title_color"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/border_line" />
+
+                            <TextView
+                                android:id="@+id/txt_send_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:text="YY.MM.DD"
+                                android:textColor="#806000"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/border_line" />
+
+                            <TextView
+                                android:id="@+id/txt_send_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:text="HH:MM"
+                                android:textColor="#806000"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/border_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/label_begin_date_time"
+                                android:layout_width="161dp"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:text="开始日期/时间："
+                                android:textColor="@color/text_title_color"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/border_line" />
+
+                            <TextView
+                                android:id="@+id/txt_begin_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:text="YY.MM.DD"
+                                android:textColor="#806000"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/border_line" />
+
+                            <TextView
+                                android:id="@+id/txt_begin_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:text="HH:MM"
+                                android:textColor="#806000"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_line" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/label_part_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="部件位置："
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/txt_part_position"
+                        android:layout_width="164dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="L/R"
+                        android:textColor="#806000"
+                        android:textColorHint="@color/update_tel_sms"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_part_number"
+                        android:layout_width="164dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="部件编号："
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/txt_part_number"
+                        android:layout_width="164dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="NNNNNN"
+                        android:textColor="@color/text_tip_color"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_qc_name"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="质控："
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/txt_qc_name"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="姓名 1"
+                        android:textColor="@color/text_tip_color"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_finish_date_time"
+                        android:layout_width="161dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="结束日期/时间："
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/txt_finish_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="YY.MM.DD"
+                        android:textColor="#806000"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/txt_finish_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="HH:MM"
+                        android:textColor="#806000"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_line" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/label_number"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="编号"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_work_content"
+                        android:layout_width="329dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="工作内容"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_completion"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="完成情况"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_worker"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="工人"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_auditor"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="审核者"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_number_of_results"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="结果数量"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_remark"
+                        android:layout_width="161dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="备注"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_picture"
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="图片"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_video"
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="视频"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/label_audio"
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="音频"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_line" />
+
+                <com.qian.ess.widget.NoScrollListView
+                    android:id="@+id/list_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/border_line"
+                    android:dividerHeight="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_line" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/border_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/txt_btn_cancel"
+            style="@style/base_footer_txt_btn"
+            android:background="@drawable/bg_btn_cancel"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="@string/ess_cancel" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_btn_begin"
+            style="@style/base_footer_txt_btn"
+            android:background="@drawable/bg_btn_begin"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="@string/ess_send" />
+
+    </LinearLayout>
+
+</LinearLayout>
